@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F29791D62197237D0052693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791D52197237D0052693F /* AppDelegate.swift */; };
+		F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */; };
+		F29791E02197237F0052693F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29791DF2197237F0052693F /* Assets.xcassets */; };
+		F29791E32197237F0052693F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29791E12197237F0052693F /* LaunchScreen.storyboard */; };
+		F29791EE219723800052693F /* GaoDeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791ED219723800052693F /* GaoDeMapTests.swift */; };
+		F29791F9219723800052693F /* GaoDeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791F8219723800052693F /* GaoDeMapUITests.swift */; };
+		F297920E2197247B0052693F /* SWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297920B2197247B0052693F /* SWMainViewController.swift */; };
+		F2979210219724C00052693F /* SWMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297920F219724C00052693F /* SWMapVC.swift */; };
+		F2979212219725730052693F /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2979211219725730052693F /* SWBaseViewController.swift */; };
+		F2979214219726D10052693F /* gaode_map_launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2979213219726D00052693F /* gaode_map_launch_screen.png */; };
+		F29792162197291B0052693F /* SWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29792152197291B0052693F /* SWBaseTableViewController.swift */; };
+		F297921921972A1D0052693F /* SWGlobalStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297921821972A1D0052693F /* SWGlobalStruct.swift */; };
+		F297921B21972B410052693F /* SWConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297921A21972B410052693F /* SWConfiguration.swift */; };
+		F297921E21972F5D0052693F /* MapClusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297921D21972F5D0052693F /* MapClusterViewController.swift */; };
+		F297922021972FCD0052693F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297921F21972FCD0052693F /* UIViewController+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F29791EA219723800052693F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29791CA2197237D0052693F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29791D12197237D0052693F;
+			remoteInfo = GaoDeMap;
+		};
+		F29791F5219723800052693F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29791CA2197237D0052693F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29791D12197237D0052693F;
+			remoteInfo = GaoDeMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F29791D22197237D0052693F /* GaoDeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoDeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29791D52197237D0052693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GaoDeMap.xcdatamodel; sourceTree = "<group>"; };
+		F29791DF2197237F0052693F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F29791E22197237F0052693F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F29791E42197237F0052693F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29791E9219723800052693F /* GaoDeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaoDeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29791ED219723800052693F /* GaoDeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaoDeMapTests.swift; sourceTree = "<group>"; };
+		F29791EF219723800052693F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29791F4219723800052693F /* GaoDeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaoDeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29791F8219723800052693F /* GaoDeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaoDeMapUITests.swift; sourceTree = "<group>"; };
+		F29791FA219723800052693F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F297920B2197247B0052693F /* SWMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMainViewController.swift; sourceTree = "<group>"; };
+		F297920F219724C00052693F /* SWMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMapVC.swift; sourceTree = "<group>"; };
+		F2979211219725730052693F /* SWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBaseViewController.swift; sourceTree = "<group>"; };
+		F2979213219726D00052693F /* gaode_map_launch_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gaode_map_launch_screen.png; sourceTree = "<group>"; };
+		F29792152197291B0052693F /* SWBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBaseTableViewController.swift; sourceTree = "<group>"; };
+		F297921821972A1D0052693F /* SWGlobalStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGlobalStruct.swift; sourceTree = "<group>"; };
+		F297921A21972B410052693F /* SWConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWConfiguration.swift; sourceTree = "<group>"; };
+		F297921D21972F5D0052693F /* MapClusterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapClusterViewController.swift; sourceTree = "<group>"; };
+		F297921F21972FCD0052693F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F29791CF2197237D0052693F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29791E6219723800052693F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29791F1219723800052693F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F29791C92197237D0052693F = {
+			isa = PBXGroup;
+			children = (
+				F29791D42197237D0052693F /* GaoDeMap */,
+				F29791EC219723800052693F /* GaoDeMapTests */,
+				F29791F7219723800052693F /* GaoDeMapUITests */,
+				F29791D32197237D0052693F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F29791D32197237D0052693F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F29791D22197237D0052693F /* GaoDeMap.app */,
+				F29791E9219723800052693F /* GaoDeMapTests.xctest */,
+				F29791F4219723800052693F /* GaoDeMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F29791D42197237D0052693F /* GaoDeMap */ = {
+			isa = PBXGroup;
+			children = (
+				F29792062197247B0052693F /* Classes */,
+				F29791D52197237D0052693F /* AppDelegate.swift */,
+				F2979217219729FE0052693F /* Manager */,
+				F29791DF2197237F0052693F /* Assets.xcassets */,
+				F2979213219726D00052693F /* gaode_map_launch_screen.png */,
+				F29791E12197237F0052693F /* LaunchScreen.storyboard */,
+				F29791E42197237F0052693F /* Info.plist */,
+				F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */,
+			);
+			path = GaoDeMap;
+			sourceTree = "<group>";
+		};
+		F29791EC219723800052693F /* GaoDeMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				F29791ED219723800052693F /* GaoDeMapTests.swift */,
+				F29791EF219723800052693F /* Info.plist */,
+			);
+			path = GaoDeMapTests;
+			sourceTree = "<group>";
+		};
+		F29791F7219723800052693F /* GaoDeMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F29791F8219723800052693F /* GaoDeMapUITests.swift */,
+				F29791FA219723800052693F /* Info.plist */,
+			);
+			path = GaoDeMapUITests;
+			sourceTree = "<group>";
+		};
+		F29792062197247B0052693F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F297920A2197247B0052693F /* Main */,
+				F29792072197247B0052693F /* Home */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F29792072197247B0052693F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F297920F219724C00052693F /* SWMapVC.swift */,
+				F297921C21972F3B0052693F /* Cluster */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F297920A2197247B0052693F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F297920B2197247B0052693F /* SWMainViewController.swift */,
+				F2979211219725730052693F /* SWBaseViewController.swift */,
+				F29792152197291B0052693F /* SWBaseTableViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F2979217219729FE0052693F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F297921A21972B410052693F /* SWConfiguration.swift */,
+				F297921821972A1D0052693F /* SWGlobalStruct.swift */,
+				F297921F21972FCD0052693F /* UIViewController+Extension.swift */,
+			);
+			name = Manager;
+			path = Classes/Manager;
+			sourceTree = "<group>";
+		};
+		F297921C21972F3B0052693F /* Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				F297921D21972F5D0052693F /* MapClusterViewController.swift */,
+			);
+			path = Cluster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F29791D12197237D0052693F /* GaoDeMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29791FD219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMap" */;
+			buildPhases = (
+				F29791CE2197237D0052693F /* Sources */,
+				F29791CF2197237D0052693F /* Frameworks */,
+				F29791D02197237D0052693F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaoDeMap;
+			productName = GaoDeMap;
+			productReference = F29791D22197237D0052693F /* GaoDeMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29791E8219723800052693F /* GaoDeMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2979200219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMapTests" */;
+			buildPhases = (
+				F29791E5219723800052693F /* Sources */,
+				F29791E6219723800052693F /* Frameworks */,
+				F29791E7219723800052693F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29791EB219723800052693F /* PBXTargetDependency */,
+			);
+			name = GaoDeMapTests;
+			productName = GaoDeMapTests;
+			productReference = F29791E9219723800052693F /* GaoDeMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F29791F3219723800052693F /* GaoDeMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2979203219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMapUITests" */;
+			buildPhases = (
+				F29791F0219723800052693F /* Sources */,
+				F29791F1219723800052693F /* Frameworks */,
+				F29791F2219723800052693F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29791F6219723800052693F /* PBXTargetDependency */,
+			);
+			name = GaoDeMapUITests;
+			productName = GaoDeMapUITests;
+			productReference = F29791F4219723800052693F /* GaoDeMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F29791CA2197237D0052693F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = lhl;
+				TargetAttributes = {
+					F29791D12197237D0052693F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F29791E8219723800052693F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F29791D12197237D0052693F;
+					};
+					F29791F3219723800052693F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F29791D12197237D0052693F;
+					};
+				};
+			};
+			buildConfigurationList = F29791CD2197237D0052693F /* Build configuration list for PBXProject "GaoDeMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F29791C92197237D0052693F;
+			productRefGroup = F29791D32197237D0052693F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F29791D12197237D0052693F /* GaoDeMap */,
+				F29791E8219723800052693F /* GaoDeMapTests */,
+				F29791F3219723800052693F /* GaoDeMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F29791D02197237D0052693F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29791E32197237F0052693F /* LaunchScreen.storyboard in Resources */,
+				F29791E02197237F0052693F /* Assets.xcassets in Resources */,
+				F2979214219726D10052693F /* gaode_map_launch_screen.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29791E7219723800052693F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29791F2219723800052693F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F29791CE2197237D0052693F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F297920E2197247B0052693F /* SWMainViewController.swift in Sources */,
+				F2979212219725730052693F /* SWBaseViewController.swift in Sources */,
+				F297921B21972B410052693F /* SWConfiguration.swift in Sources */,
+				F29792162197291B0052693F /* SWBaseTableViewController.swift in Sources */,
+				F297921E21972F5D0052693F /* MapClusterViewController.swift in Sources */,
+				F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */,
+				F2979210219724C00052693F /* SWMapVC.swift in Sources */,
+				F29791D62197237D0052693F /* AppDelegate.swift in Sources */,
+				F297922021972FCD0052693F /* UIViewController+Extension.swift in Sources */,
+				F297921921972A1D0052693F /* SWGlobalStruct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29791E5219723800052693F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29791EE219723800052693F /* GaoDeMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29791F0219723800052693F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29791F9219723800052693F /* GaoDeMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F29791EB219723800052693F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29791D12197237D0052693F /* GaoDeMap */;
+			targetProxy = F29791EA219723800052693F /* PBXContainerItemProxy */;
+		};
+		F29791F6219723800052693F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29791D12197237D0052693F /* GaoDeMap */;
+			targetProxy = F29791F5219723800052693F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F29791E12197237F0052693F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29791E22197237F0052693F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F29791FB219723800052693F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F29791FC219723800052693F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F29791FE219723800052693F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				INFOPLIST_FILE = GaoDeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.GaoDeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F29791FF219723800052693F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				INFOPLIST_FILE = GaoDeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.GaoDeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2979201219723800052693F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				INFOPLIST_FILE = GaoDeMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.GaoDeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaoDeMap.app/GaoDeMap";
+			};
+			name = Debug;
+		};
+		F2979202219723800052693F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				INFOPLIST_FILE = GaoDeMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.GaoDeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaoDeMap.app/GaoDeMap";
+			};
+			name = Release;
+		};
+		F2979204219723800052693F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				INFOPLIST_FILE = GaoDeMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.GaoDeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaoDeMap;
+			};
+			name = Debug;
+		};
+		F2979205219723800052693F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				INFOPLIST_FILE = GaoDeMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.GaoDeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaoDeMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F29791CD2197237D0052693F /* Build configuration list for PBXProject "GaoDeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29791FB219723800052693F /* Debug */,
+				F29791FC219723800052693F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29791FD219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29791FE219723800052693F /* Debug */,
+				F29791FF219723800052693F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2979200219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2979201219723800052693F /* Debug */,
+				F2979202219723800052693F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2979203219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2979204219723800052693F /* Debug */,
+				F2979205219723800052693F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */,
+			);
+			currentVersion = F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */;
+			path = GaoDeMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F29791CA2197237D0052693F /* Project object */;
+}
