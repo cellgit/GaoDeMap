@@ -26,6 +26,7 @@
 		F21D7E512199BE53002F5006 /* MapClusterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E3A2199BE52002F5006 /* MapClusterContainer.swift */; };
 		F21D7E552199BFA1002F5006 /* UIButton+ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E542199BFA1002F5006 /* UIButton+ClosureButton.swift */; };
 		F21D81CC2199CAFD002F5006 /* cluster_gaode.png in Resources */ = {isa = PBXBuildFile; fileRef = F21D81CB2199CAFD002F5006 /* cluster_gaode.png */; };
+		F21D81CE2199CDD0002F5006 /* cluster_gaode_sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = F21D81CD2199CDCF002F5006 /* cluster_gaode_sketch.png */; };
 		F29791D62197237D0052693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791D52197237D0052693F /* AppDelegate.swift */; };
 		F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */; };
 		F29791E02197237F0052693F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29791DF2197237F0052693F /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		F21D7E3A2199BE52002F5006 /* MapClusterContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapClusterContainer.swift; sourceTree = "<group>"; };
 		F21D7E542199BFA1002F5006 /* UIButton+ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ClosureButton.swift"; sourceTree = "<group>"; };
 		F21D81CB2199CAFD002F5006 /* cluster_gaode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cluster_gaode.png; sourceTree = "<group>"; };
+		F21D81CD2199CDCF002F5006 /* cluster_gaode_sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cluster_gaode_sketch.png; sourceTree = "<group>"; };
 		F29791D22197237D0052693F /* GaoDeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoDeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29791D52197237D0052693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GaoDeMap.xcdatamodel; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				F29791DF2197237F0052693F /* Assets.xcassets */,
 				F2979213219726D00052693F /* gaode_map_launch_screen.png */,
 				F21D81CB2199CAFD002F5006 /* cluster_gaode.png */,
+				F21D81CD2199CDCF002F5006 /* cluster_gaode_sketch.png */,
 				F29791E12197237F0052693F /* LaunchScreen.storyboard */,
 				F29791E42197237F0052693F /* Info.plist */,
 				F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */,
@@ -462,6 +465,7 @@
 			files = (
 				F29791E32197237F0052693F /* LaunchScreen.storyboard in Resources */,
 				F21D81CC2199CAFD002F5006 /* cluster_gaode.png in Resources */,
+				F21D81CE2199CDD0002F5006 /* cluster_gaode_sketch.png in Resources */,
 				F29791E02197237F0052693F /* Assets.xcassets in Resources */,
 				F2979214219726D10052693F /* gaode_map_launch_screen.png in Resources */,
 			);
