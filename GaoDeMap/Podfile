@@ -1,0 +1,13 @@
+
+platform :ios, '9.0'
+
+use_frameworks!
+target 'GaoDeMap' do
+
+
+     pod 'AMap3DMap-NO-IDFA', '~> 6.5.0'
+     pod 'AMapSearch-NO-IDFA', '~> 6.5.0'
+     pod 'AMapLocation-NO-IDFA', '~> 2.6.1'
+
+
+end

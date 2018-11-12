@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E38D04D3F0DBBFB12172E4E6 /* Pods_GaoDeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AF692CC2D9BE4CEA2F87A /* Pods_GaoDeMap.framework */; };
 		F29791D62197237D0052693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791D52197237D0052693F /* AppDelegate.swift */; };
 		F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */; };
 		F29791E02197237F0052693F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29791DF2197237F0052693F /* Assets.xcassets */; };
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85F2D1F9332A6C57D21EFCAC /* Pods-GaoDeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoDeMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GaoDeMap/Pods-GaoDeMap.debug.xcconfig"; sourceTree = "<group>"; };
+		EA7AF692CC2D9BE4CEA2F87A /* Pods_GaoDeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaoDeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21D7E112199BC27002F5006 /* GaoDeMap-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GaoDeMap-Bridging-Header.h"; sourceTree = "<group>"; };
 		F29791D22197237D0052693F /* GaoDeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoDeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29791D52197237D0052693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GaoDeMap.xcdatamodel; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		F297921A21972B410052693F /* SWConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWConfiguration.swift; sourceTree = "<group>"; };
 		F297921D21972F5D0052693F /* MapClusterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapClusterViewController.swift; sourceTree = "<group>"; };
 		F297921F21972FCD0052693F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FE58A1BEDF6628ACDA947F48 /* Pods-GaoDeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoDeMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaoDeMap/Pods-GaoDeMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38D04D3F0DBBFB12172E4E6 /* Pods_GaoDeMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +96,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15198165923B6D9E3BB906D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85F2D1F9332A6C57D21EFCAC /* Pods-GaoDeMap.debug.xcconfig */,
+				FE58A1BEDF6628ACDA947F48 /* Pods-GaoDeMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0E8AE635BED5A57E7E1178A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AF692CC2D9BE4CEA2F87A /* Pods_GaoDeMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F29791C92197237D0052693F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +120,8 @@
 				F29791EC219723800052693F /* GaoDeMapTests */,
 				F29791F7219723800052693F /* GaoDeMapUITests */,
 				F29791D32197237D0052693F /* Products */,
+				15198165923B6D9E3BB906D5 /* Pods */,
+				E0E8AE635BED5A57E7E1178A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +140,7 @@
 			children = (
 				F29792062197247B0052693F /* Classes */,
 				F29791D52197237D0052693F /* AppDelegate.swift */,
+				F21D7E112199BC27002F5006 /* GaoDeMap-Bridging-Header.h */,
 				F2979217219729FE0052693F /* Manager */,
 				F29791DF2197237F0052693F /* Assets.xcassets */,
 				F2979213219726D00052693F /* gaode_map_launch_screen.png */,
@@ -197,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29791FD219723800052693F /* Build configuration list for PBXNativeTarget "GaoDeMap" */;
 			buildPhases = (
+				CAB4487FBA0698DDD45EB7AC /* [CP] Check Pods Manifest.lock */,
 				F29791CE2197237D0052693F /* Sources */,
 				F29791CF2197237D0052693F /* Frameworks */,
 				F29791D02197237D0052693F /* Resources */,
+				51D2DCF4FECE8FE221E7344F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +343,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51D2DCF4FECE8FE221E7344F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GaoDeMap/Pods-GaoDeMap-resources.sh",
+				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GaoDeMap/Pods-GaoDeMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB4487FBA0698DDD45EB7AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaoDeMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F29791CE2197237D0052693F /* Sources */ = {
@@ -495,6 +570,7 @@
 		};
 		F29791FE219723800052693F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F2D1F9332A6C57D21EFCAC /* Pods-GaoDeMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +589,7 @@
 		};
 		F29791FF219723800052693F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE58A1BEDF6628ACDA947F48 /* Pods-GaoDeMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
