@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E38D04D3F0DBBFB12172E4E6 /* Pods_GaoDeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AF692CC2D9BE4CEA2F87A /* Pods_GaoDeMap.framework */; };
-		F21D7E3F2199BE53002F5006 /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E1B2199BE52002F5006 /* PoiDetailViewController.m */; };
-		F21D7E402199BE53002F5006 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E1C2199BE52002F5006 /* BaseMapViewController.m */; };
-		F21D7E412199BE53002F5006 /* AnnotationClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E1E2199BE52002F5006 /* AnnotationClusterViewController.m */; };
 		F21D7E422199BE53002F5006 /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E212199BE52002F5006 /* ClusterAnnotation.m */; };
 		F21D7E432199BE53002F5006 /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E232199BE52002F5006 /* CoordinateQuadTree.m */; };
 		F21D7E442199BE53002F5006 /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E242199BE52002F5006 /* QuadTree.m */; };
@@ -27,7 +24,6 @@
 		F21D7E552199BFA1002F5006 /* UIButton+ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D7E542199BFA1002F5006 /* UIButton+ClosureButton.swift */; };
 		F21D81CC2199CAFD002F5006 /* cluster_gaode.png in Resources */ = {isa = PBXBuildFile; fileRef = F21D81CB2199CAFD002F5006 /* cluster_gaode.png */; };
 		F21D81CE2199CDD0002F5006 /* cluster_gaode_sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = F21D81CD2199CDCF002F5006 /* cluster_gaode_sketch.png */; };
-		F21D81D02199D43F002F5006 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = F21D81CF2199D43F002F5006 /* .gitattributes */; };
 		F29791D62197237D0052693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791D52197237D0052693F /* AppDelegate.swift */; };
 		F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */; };
 		F29791E02197237F0052693F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29791DF2197237F0052693F /* Assets.xcassets */; };
@@ -66,12 +62,6 @@
 		85F2D1F9332A6C57D21EFCAC /* Pods-GaoDeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaoDeMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GaoDeMap/Pods-GaoDeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		EA7AF692CC2D9BE4CEA2F87A /* Pods_GaoDeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaoDeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21D7E112199BC27002F5006 /* GaoDeMap-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GaoDeMap-Bridging-Header.h"; sourceTree = "<group>"; };
-		F21D7E1A2199BE52002F5006 /* AnnotationClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterViewController.h; sourceTree = "<group>"; };
-		F21D7E1B2199BE52002F5006 /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
-		F21D7E1C2199BE52002F5006 /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapViewController.m; sourceTree = "<group>"; };
-		F21D7E1D2199BE52002F5006 /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
-		F21D7E1E2199BE52002F5006 /* AnnotationClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterViewController.m; sourceTree = "<group>"; };
-		F21D7E1F2199BE52002F5006 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
 		F21D7E212199BE52002F5006 /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
 		F21D7E222199BE52002F5006 /* SWAMapPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAMapPOI.h; sourceTree = "<group>"; };
 		F21D7E232199BE52002F5006 /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
@@ -95,7 +85,6 @@
 		F21D7E542199BFA1002F5006 /* UIButton+ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ClosureButton.swift"; sourceTree = "<group>"; };
 		F21D81CB2199CAFD002F5006 /* cluster_gaode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cluster_gaode.png; sourceTree = "<group>"; };
 		F21D81CD2199CDCF002F5006 /* cluster_gaode_sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cluster_gaode_sketch.png; sourceTree = "<group>"; };
-		F21D81CF2199D43F002F5006 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitattributes; path = ../.gitattributes; sourceTree = "<group>"; };
 		F29791D22197237D0052693F /* GaoDeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoDeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29791D52197237D0052693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GaoDeMap.xcdatamodel; sourceTree = "<group>"; };
@@ -176,32 +165,10 @@
 		F21D7E172199BE52002F5006 /* ClusterAnnotation */ = {
 			isa = PBXGroup;
 			children = (
-				F21D7E182199BE52002F5006 /* Demo */,
 				F21D7E202199BE52002F5006 /* Model */,
 				F21D7E292199BE52002F5006 /* View */,
 			);
 			path = ClusterAnnotation;
-			sourceTree = "<group>";
-		};
-		F21D7E182199BE52002F5006 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				F21D7E192199BE52002F5006 /* Controller */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		F21D7E192199BE52002F5006 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F21D7E1A2199BE52002F5006 /* AnnotationClusterViewController.h */,
-				F21D7E1B2199BE52002F5006 /* PoiDetailViewController.m */,
-				F21D7E1C2199BE52002F5006 /* BaseMapViewController.m */,
-				F21D7E1D2199BE52002F5006 /* PoiDetailViewController.h */,
-				F21D7E1E2199BE52002F5006 /* AnnotationClusterViewController.m */,
-				F21D7E1F2199BE52002F5006 /* BaseMapViewController.h */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		F21D7E202199BE52002F5006 /* Model */ = {
@@ -255,7 +222,6 @@
 		F29791C92197237D0052693F = {
 			isa = PBXGroup;
 			children = (
-				F21D81CF2199D43F002F5006 /* .gitattributes */,
 				F29791D42197237D0052693F /* GaoDeMap */,
 				F29791EC219723800052693F /* GaoDeMapTests */,
 				F29791F7219723800052693F /* GaoDeMapUITests */,
@@ -467,7 +433,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29791E32197237F0052693F /* LaunchScreen.storyboard in Resources */,
-				F21D81D02199D43F002F5006 /* .gitattributes in Resources */,
 				F21D81CC2199CAFD002F5006 /* cluster_gaode.png in Resources */,
 				F21D81CE2199CDD0002F5006 /* cluster_gaode_sketch.png in Resources */,
 				F29791E02197237F0052693F /* Assets.xcassets in Resources */,
@@ -546,7 +511,6 @@
 				F21D7E422199BE53002F5006 /* ClusterAnnotation.m in Sources */,
 				F21D7E452199BE53002F5006 /* SWAMapPOI.m in Sources */,
 				F21D7E462199BE53002F5006 /* ClusterAnnotationView.m in Sources */,
-				F21D7E402199BE53002F5006 /* BaseMapViewController.m in Sources */,
 				F21D7E442199BE53002F5006 /* QuadTree.m in Sources */,
 				F21D7E432199BE53002F5006 /* CoordinateQuadTree.m in Sources */,
 				F21D7E4B2199BE53002F5006 /* SWCustomMapView.swift in Sources */,
@@ -566,9 +530,7 @@
 				F21D7E472199BE53002F5006 /* ClusterTableViewCell.m in Sources */,
 				F21D7E482199BE53002F5006 /* CustomCalloutView.m in Sources */,
 				F29791D62197237D0052693F /* AppDelegate.swift in Sources */,
-				F21D7E412199BE53002F5006 /* AnnotationClusterViewController.m in Sources */,
 				F297922021972FCD0052693F /* UIViewController+Extension.swift in Sources */,
-				F21D7E3F2199BE53002F5006 /* PoiDetailViewController.m in Sources */,
 				F297921921972A1D0052693F /* SWGlobalStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
