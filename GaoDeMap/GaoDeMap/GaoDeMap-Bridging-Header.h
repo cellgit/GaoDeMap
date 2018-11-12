@@ -10,8 +10,8 @@
 #define GaoDeMap_Bridging_Header_h
 
 // 高德地图
-//#import <AMapFoundationKit/AMapFoundationKit.h>
-//#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <MAMapKit/MAMapKit.h>
 
 /// 高德地图聚合点
 //#import "CoordinateQuadTree.h"
