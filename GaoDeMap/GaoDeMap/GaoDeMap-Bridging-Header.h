@@ -14,12 +14,12 @@
 #import <MAMapKit/MAMapKit.h>
 
 /// 高德地图聚合点
-//#import "CoordinateQuadTree.h"
-//#import "ClusterAnnotation.h"
-//#import "ClusterAnnotationView.h"
-//#import "ClusterTableViewCell.h"
-//#import "CustomCalloutView.h"
-//#import "SWAMapPOI.h"
+#import "CoordinateQuadTree.h"
+#import "ClusterAnnotation.h"
+#import "ClusterAnnotationView.h"
+#import "ClusterTableViewCell.h"
+#import "CustomCalloutView.h"
+#import "SWAMapPOI.h"
 
 
 #endif /* GaoDeMap_Bridging_Header_h */
