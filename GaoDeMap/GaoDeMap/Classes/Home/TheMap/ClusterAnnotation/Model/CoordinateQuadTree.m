@@ -10,15 +10,10 @@
 #import <AMapSearchKit/AMapCommonObj.h>
 #import "CoordinateQuadTree.h"
 #import "ClusterAnnotation.h"
-#import "SWAMapPOI.h"
 
 
-
-
-//QuadTreeNodeData QuadTreeNodeDataForAMapPOI(SWAMapPOI* poi)
 QuadTreeNodeData QuadTreeNodeDataForAMapPOI(ClusterAnnotation* poi)
 {
-//    return QuadTreeNodeDataMake(poi.lat, poi.lon, (__bridge_retained void *)(poi));
     return QuadTreeNodeDataMake(poi.coordinate.latitude, poi.coordinate.longitude, (__bridge_retained void *)(poi));
 }
 
@@ -61,14 +56,6 @@ float CellSizeForZoomLevel(double zoomLevel)
 
 BoundingBox quadTreeNodeDataArrayForPOIs(QuadTreeNodeData *dataArray, NSArray * pois)
 {
-//    CLLocationDegrees minX = ((SWAMapPOI *)pois[0]).lat;
-//    CLLocationDegrees maxX = ((SWAMapPOI *)pois[0]).lat;
-//
-//    CLLocationDegrees minY = ((SWAMapPOI *)pois[0]).lon;
-//    CLLocationDegrees maxY = ((SWAMapPOI *)pois[0]).lon;
-    
-    
-    
     CLLocationDegrees minX = ((ClusterAnnotation *)pois[0]).coordinate.latitude;
     CLLocationDegrees maxX = ((ClusterAnnotation *)pois[0]).coordinate.latitude;
     
@@ -142,8 +129,6 @@ BoundingBox quadTreeNodeDataArrayForPOIs(QuadTreeNodeData *dataArray, NSArray * 
                                           totalX += data.x;
                                           totalY += data.y;
                                           count++;
-                                          
-//                                          [pois addObject:(__bridge SWAMapPOI *)data.data];
                                           
                                           [pois addObject:(__bridge ClusterAnnotation *)data.data];
                                       });

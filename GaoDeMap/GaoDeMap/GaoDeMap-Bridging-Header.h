@@ -19,7 +19,6 @@
 #import "ClusterAnnotationView.h"
 #import "ClusterTableViewCell.h"
 #import "CustomCalloutView.h"
-#import "SWAMapPOI.h"
 
 
 #endif /* GaoDeMap_Bridging_Header_h */

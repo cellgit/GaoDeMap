@@ -12,5 +12,6 @@ import UIKit
 // UITableView 列表的数据 struct
 struct SWTableViewDataStruct {
     var title = ""
+    var subtitle = ""
     var identifier = ""
 }

@@ -6,6 +6,11 @@
 //  Copyright © 2018 lhl. All rights reserved.
 //
 
+/*
+ 这个类是 聚合点 示例的入口, j将 TheMap文件夹直接拖进项目即可(保证SDK和桥接文件正常)
+ */
+
+
 import UIKit
 
 class MapClusterViewController: UIViewController {

@@ -23,7 +23,7 @@
 
 
 
-
+/// 如果需要传递m swift 项目的 model 则需要桥接
 /// extension : 根据项目需要扩展属性, 如果需要其它属性,自行添加后再创建 annotation 时赋值即可
 /// 房源封面图片的 url 地址
 @property (nonatomic, copy) NSString *imgUrl;

@@ -40,10 +40,16 @@ class SWBaseTableViewController: SWBaseViewController {
                 tableView.contentInset = UIEdgeInsets(top: SWSize.navBarHeight + 20, left: 0, bottom: 0, right: 0)
             }
         } else {}
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: KUITableViewCell)
+//        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: KUITableViewCell)
+        registerCell()
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    func registerCell() {
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: KUITableViewCell)
+    }
+    
 }
 
 extension SWBaseTableViewController: UITableViewDataSource,UITableViewDelegate {
@@ -64,9 +70,9 @@ extension SWBaseTableViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 55
+//    }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01
     }
