@@ -29,6 +29,8 @@
 		F21D81E1219B25D9002F5006 /* GaodeOrgWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D81DF219B25D9002F5006 /* GaodeOrgWebViewController.xib */; };
 		F21D81EA219C5E31002F5006 /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D81E9219C5E31002F5006 /* BaseMapViewController.swift */; };
 		F21D81EC219C6B97002F5006 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = F21D81EB219C6B96002F5006 /* Resource */; };
+		F21D81F0219C6F5E002F5006 /* CodeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D81EE219C6F5E002F5006 /* CodeWebViewController.swift */; };
+		F21D81F1219C6F5E002F5006 /* CodeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D81EF219C6F5E002F5006 /* CodeWebViewController.xib */; };
 		F29791D62197237D0052693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791D52197237D0052693F /* AppDelegate.swift */; };
 		F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */; };
 		F29791E02197237F0052693F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29791DF2197237F0052693F /* Assets.xcassets */; };
@@ -94,6 +96,8 @@
 		F21D81DF219B25D9002F5006 /* GaodeOrgWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaodeOrgWebViewController.xib; sourceTree = "<group>"; };
 		F21D81E9219C5E31002F5006 /* BaseMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
 		F21D81EB219C6B96002F5006 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = Classes/Resource; sourceTree = "<group>"; };
+		F21D81EE219C6F5E002F5006 /* CodeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeWebViewController.swift; sourceTree = "<group>"; };
+		F21D81EF219C6F5E002F5006 /* CodeWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeWebViewController.xib; sourceTree = "<group>"; };
 		F29791D22197237D0052693F /* GaoDeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoDeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29791D52197237D0052693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GaoDeMap.xcdatamodel; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 			children = (
 				F21D81DE219B25D9002F5006 /* GaodeOrgWebViewController.swift */,
 				F21D81DF219B25D9002F5006 /* GaodeOrgWebViewController.xib */,
+				F21D81EE219C6F5E002F5006 /* CodeWebViewController.swift */,
+				F21D81EF219C6F5E002F5006 /* CodeWebViewController.xib */,
 			);
 			path = OrgExamples;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				F21D81CC2199CAFD002F5006 /* cluster_gaode.png in Resources */,
 				F21D81CE2199CDD0002F5006 /* cluster_gaode_sketch.png in Resources */,
 				F21D81E1219B25D9002F5006 /* GaodeOrgWebViewController.xib in Resources */,
+				F21D81F1219C6F5E002F5006 /* CodeWebViewController.xib in Resources */,
 				F29791E02197237F0052693F /* Assets.xcassets in Resources */,
 				F21D81D4219B15D9002F5006 /* SWMapCell.xib in Resources */,
 				F2979214219726D10052693F /* gaode_map_launch_screen.png in Resources */,
@@ -578,6 +585,7 @@
 				F21D7E432199BE53002F5006 /* CoordinateQuadTree.m in Sources */,
 				F21D7E4B2199BE53002F5006 /* SWCustomMapView.swift in Sources */,
 				F297920E2197247B0052693F /* SWMainViewController.swift in Sources */,
+				F21D81F0219C6F5E002F5006 /* CodeWebViewController.swift in Sources */,
 				F21D7E4D2199BE53002F5006 /* SWMapButton.swift in Sources */,
 				F2979212219725730052693F /* SWBaseViewController.swift in Sources */,
 				F21D81E0219B25D9002F5006 /* GaodeOrgWebViewController.swift in Sources */,

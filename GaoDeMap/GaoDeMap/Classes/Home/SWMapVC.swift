@@ -100,10 +100,10 @@ extension SWMapVC: SWMapCellDelegate {
     /// 本 app 实现
     func sw_code_action(sender: UIButton, identifier: String) {
         var vc = UIViewController.init()
-        
+        //https://github.com/cellgit/GaoDeMap/blob/master/GaoDeMap/GaoDeMap/Classes/Resource/001ShowMap.md
         switch identifier {
         case KBaseMapIdentifier:
-            vc = GaodeOrgWebViewController.init(identifier: identifier)
+            vc = CodeWebViewController.init(identifier: identifier)
         case KClusterIdentifier:
             vc = GaodeOrgWebViewController.init(identifier: identifier)
         default:
