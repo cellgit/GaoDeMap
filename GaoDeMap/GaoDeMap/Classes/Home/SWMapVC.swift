@@ -74,10 +74,10 @@ extension SWMapVC: SWMapCellDelegate {
     func sw_action(sender: UIButton, identifier: String) {
         switch identifier {
         case "SWClusterIdentifier":
-            let vc = OrgClusterShowingViewController.init(identifier: identifier)
+            let vc = GaodeOrgWebViewController.init(identifier: identifier)
             self.navigationController?.pushViewController(vc, animated: true)
         default:
-            let vc = OrgClusterShowingViewController()
+            let vc = GaodeOrgWebViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

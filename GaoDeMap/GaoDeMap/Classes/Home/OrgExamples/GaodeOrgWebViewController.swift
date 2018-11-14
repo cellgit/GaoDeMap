@@ -1,5 +1,5 @@
 //
-//  OrgClusterShowingViewController.swift
+//  GaodeOrgWebViewController.swift
 //  GaoDeMap
 //
 //  Created by 刘宏立 on 2018/11/13.
@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class OrgClusterShowingViewController: UIViewController {
+class GaodeOrgWebViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
@@ -24,28 +24,27 @@ class OrgClusterShowingViewController: UIViewController {
         
         self.identifier = identifier
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupUI(identifier: identifier)
     }
-    
-    
+
+
     func setupUI(identifier: String) {
         
         switch identifier {
         case "SWClusterIdentifier":
+            /// iOS 点聚合
             urlStr = "https://lbs.amap.com/dev/demo/cluster-marker#iOS"
         default:
-            urlStr = "https://lbs.amap.com/dev/demo/cluster-marker#iOS"
+            // 高德开放平台主页
+            urlStr = "https://lbs.amap.com"
         }
-
+        
         let url:URL = URL.init(string: urlStr)!
         webView.load(URLRequest(url: url))
     }
-
-    
 
 }

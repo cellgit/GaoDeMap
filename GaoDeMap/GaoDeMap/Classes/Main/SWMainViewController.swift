@@ -23,10 +23,14 @@ class SWMainViewController: UITabBarController {
     
 
     func addChildViewControllers() {
-        let first = SWMainVCStruct.init(title: "GaoDeMap", imgName: "me", vc: SWMapVC())
-        let second = SWMainVCStruct.init(title: "AR", imgName: "me", vc: SWMapVC())
-        let third = SWMainVCStruct.init(title: "CoreML", imgName: "me", vc: SWMapVC())
-        let array = [first,second,third]
+        let first = SWMainVCStruct.init(title: "地图", imgName: "me", vc: SWMapVC())
+        let second = SWMainVCStruct.init(title: "定位", imgName: "me", vc: SWMapVC())
+        let third = SWMainVCStruct.init(title: "导航", imgName: "me", vc: SWMapVC())
+        let fourth = SWMainVCStruct.init(title: "猎鹰", imgName: "me", vc: SWMapVC())
+        let fifth = SWMainVCStruct.init(title: "室内", imgName: "me", vc: GaodeOrgWebViewController())
+        
+        
+        let array = [first,second,third,fourth,fifth]
         var arrayM = [UIViewController]()
         for item in array {
             arrayM.append(self.childControllers(params: item))
