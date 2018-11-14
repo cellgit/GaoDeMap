@@ -22,8 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.white
         window?.rootViewController = SWMainViewController()
         window?.makeKeyAndVisible()
+        
+        addKeys()
         return true
     }
+    
+    
+    func addKeys() {
+        /// 高德地图
+        AMapServices.shared().apiKey = "7908b9009792c47f8fe8a89d4ba2ed54"
+    }
+    
+    
+    
+    
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

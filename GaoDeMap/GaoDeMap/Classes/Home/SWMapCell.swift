@@ -9,16 +9,20 @@
 import UIKit
 
 protocol SWMapCellDelegate {
-    func sw_action(sender: UIButton, identifier: String)
+    func sw_org_action(sender: UIButton, identifier: String)
+    func sw_code_action(sender: UIButton, identifier: String)
 }
 
 
 class SWMapCell: UITableViewCell {
     
+    var identifier: String = ""
+    
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
-    
     @IBOutlet weak var orgBtn: UIButton!
+    @IBOutlet weak var codeBtn: UIButton!
     
     var delegate: SWMapCellDelegate!
     
@@ -50,10 +54,19 @@ class SWMapCell: UITableViewCell {
         orgBtn.layer.borderWidth = 0.5
         orgBtn.layer.borderColor = UIColor.init(red: 0 / 255.0, green: 122.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0).cgColor
         
+        codeBtn.layer.cornerRadius = codeBtn.bounds.height / 2
+        codeBtn.clipsToBounds = true
+        codeBtn.layer.borderWidth = 0.5
+        codeBtn.layer.borderColor = UIColor.init(red: 0 / 255.0, green: 122.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0).cgColor
+        
         
         orgBtn.action { (sender) in
-            self.delegate.sw_action(sender: sender, identifier: "SWClusterIdentifier")
+            self.delegate.sw_org_action(sender: sender, identifier: self.identifier)
         }
+        codeBtn.action { (sender) in
+            self.delegate.sw_code_action(sender: sender, identifier: self.identifier)
+        }
+        
     }
     
     

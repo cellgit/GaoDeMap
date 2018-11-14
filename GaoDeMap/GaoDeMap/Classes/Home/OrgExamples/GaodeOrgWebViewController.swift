@@ -11,6 +11,11 @@ import WebKit
 
 class GaodeOrgWebViewController: UIViewController {
     
+    /// 显示地图
+    let KBaseMapIdentifier = "BaseMapIdentifier"
+    /// iOS 点聚合
+    let KClusterIdentifier = "ClusterIdentifier"
+    
     @IBOutlet weak var webView: WKWebView!
     
     
@@ -35,8 +40,10 @@ class GaodeOrgWebViewController: UIViewController {
     func setupUI(identifier: String) {
         
         switch identifier {
-        case "SWClusterIdentifier":
-            /// iOS 点聚合
+            
+        case KBaseMapIdentifier:
+            urlStr = "https://lbs.amap.com/api/ios-sdk/guide/create-map/show-map"
+        case KClusterIdentifier:
             urlStr = "https://lbs.amap.com/dev/demo/cluster-marker#iOS"
         default:
             // 高德开放平台主页
