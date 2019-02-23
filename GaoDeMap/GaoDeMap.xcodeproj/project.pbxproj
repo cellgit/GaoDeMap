@@ -31,6 +31,8 @@
 		F21D81EC219C6B97002F5006 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = F21D81EB219C6B96002F5006 /* Resource */; };
 		F21D81F0219C6F5E002F5006 /* CodeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D81EE219C6F5E002F5006 /* CodeWebViewController.swift */; };
 		F21D81F1219C6F5E002F5006 /* CodeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D81EF219C6F5E002F5006 /* CodeWebViewController.xib */; };
+		F26657C822214E59002125B0 /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26657C722214E59002125B0 /* GoogleMapsViewController.swift */; };
+		F26657CA22215090002125B0 /* BaseGoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26657C922215090002125B0 /* BaseGoogleMapsViewController.swift */; };
 		F29791D62197237D0052693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29791D52197237D0052693F /* AppDelegate.swift */; };
 		F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29791DC2197237D0052693F /* GaoDeMap.xcdatamodeld */; };
 		F29791E02197237F0052693F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29791DF2197237F0052693F /* Assets.xcassets */; };
@@ -98,6 +100,8 @@
 		F21D81EB219C6B96002F5006 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = Classes/Resource; sourceTree = "<group>"; };
 		F21D81EE219C6F5E002F5006 /* CodeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeWebViewController.swift; sourceTree = "<group>"; };
 		F21D81EF219C6F5E002F5006 /* CodeWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeWebViewController.xib; sourceTree = "<group>"; };
+		F26657C722214E59002125B0 /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		F26657C922215090002125B0 /* BaseGoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGoogleMapsViewController.swift; sourceTree = "<group>"; };
 		F29791D22197237D0052693F /* GaoDeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaoDeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29791D52197237D0052693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29791DD2197237D0052693F /* GaoDeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GaoDeMap.xcdatamodel; sourceTree = "<group>"; };
@@ -281,6 +285,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F26657C422214D4C002125B0 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				F26657C722214E59002125B0 /* GoogleMapsViewController.swift */,
+				F26657C922215090002125B0 /* BaseGoogleMapsViewController.swift */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
 		F29791C92197237D0052693F = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				F297920A2197247B0052693F /* Main */,
+				F26657C422214D4C002125B0 /* GoogleMaps */,
 				F29792072197247B0052693F /* Home */,
 				F21D81E4219C5D29002F5006 /* Map */,
 			);
@@ -538,12 +552,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GaoDeMap/Pods-GaoDeMap-resources.sh",
 				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -600,6 +618,8 @@
 				F297921E21972F5D0052693F /* MapClusterViewController.swift in Sources */,
 				F29791DE2197237D0052693F /* GaoDeMap.xcdatamodeld in Sources */,
 				F21D7E552199BFA1002F5006 /* UIButton+ClosureButton.swift in Sources */,
+				F26657CA22215090002125B0 /* BaseGoogleMapsViewController.swift in Sources */,
+				F26657C822214E59002125B0 /* GoogleMapsViewController.swift in Sources */,
 				F2979210219724C00052693F /* SWMapVC.swift in Sources */,
 				F21D7E472199BE53002F5006 /* ClusterTableViewCell.m in Sources */,
 				F21D7E482199BE53002F5006 /* CustomCalloutView.m in Sources */,
@@ -776,6 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				INFOPLIST_FILE = GaoDeMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -796,6 +817,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				INFOPLIST_FILE = GaoDeMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

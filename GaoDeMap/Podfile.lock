@@ -6,11 +6,20 @@ PODS:
     - AMapFoundation-NO-IDFA (~> 1.4)
   - AMapSearch-NO-IDFA (6.5.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
 
 DEPENDENCIES:
   - AMap3DMap-NO-IDFA (~> 6.5.0)
   - AMapLocation-NO-IDFA (~> 2.6.1)
   - AMapSearch-NO-IDFA (~> 6.5.0)
+  - GoogleMaps (~> 2.7.0)
+  - GooglePlaces (~> 2.7.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,13 +27,17 @@ SPEC REPOS:
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
     - AMapSearch-NO-IDFA
+    - GoogleMaps
+    - GooglePlaces
 
 SPEC CHECKSUMS:
   AMap3DMap-NO-IDFA: 8cdbdce78a17fe1170e208fc6371875aec81533e
   AMapFoundation-NO-IDFA: a09d8cef57c10d4f841595829a574bcea67fc323
   AMapLocation-NO-IDFA: ffd69b8b88f553d0b252d4967bf301ad2afff9c0
   AMapSearch-NO-IDFA: 9d989bd376133fdba233f0f8dc5dce8642267e0b
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
 
-PODFILE CHECKSUM: da43c394f5a1abe84abc27a4fac18220fa5356b9
+PODFILE CHECKSUM: a7aaa063aa8d169bad98b917960ab11d0f362f80
 
 COCOAPODS: 1.5.3

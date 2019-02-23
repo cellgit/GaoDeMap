@@ -9,5 +9,8 @@ target 'GaoDeMap' do
      pod 'AMapSearch-NO-IDFA', '~> 6.5.0'
      pod 'AMapLocation-NO-IDFA', '~> 2.6.1'
 
+     pod 'GoogleMaps', '~> 2.7.0'
+     pod 'GooglePlaces', '~> 2.7.0'
+
 
 end

@@ -23,7 +23,7 @@ class SWMainViewController: UITabBarController {
     
 
     func addChildViewControllers() {
-        let first = SWMainVCStruct.init(title: "地图", imgName: "me", vc: SWMapVC())
+        let first = SWMainVCStruct.init(title: "谷歌", imgName: "me", vc: GoogleMapsViewController())
         let second = SWMainVCStruct.init(title: "定位", imgName: "me", vc: SWMapVC())
         let third = SWMainVCStruct.init(title: "导航", imgName: "me", vc: SWMapVC())
         let fourth = SWMainVCStruct.init(title: "猎鹰", imgName: "me", vc: SWMapVC())

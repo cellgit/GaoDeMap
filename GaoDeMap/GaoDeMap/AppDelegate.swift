@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,8 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func addKeys() {
+        /// Google Maps
+        GMSServices.provideAPIKey("AIzaSyCRwmxSkcakNGPk33PNGU3VsJYzMMefafY")
+        GMSPlacesClient.provideAPIKey("AIzaSyCRwmxSkcakNGPk33PNGU3VsJYzMMefafY")
         /// 高德地图
         AMapServices.shared().apiKey = "7908b9009792c47f8fe8a89d4ba2ed54"
+        
     }
     
     
